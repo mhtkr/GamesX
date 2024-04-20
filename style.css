@@ -1,0 +1,61 @@
+body
+{
+    background-color: #585656;
+    margin: 0;
+    font-size: 80%;
+}
+.title
+{
+    background-color: aqua;
+    width: 25%;
+}
+.r_head
+{
+    display: flex;
+    background-color: aquamarine;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+.header
+{
+    display: flex;
+    text-align: center;
+}
+.game_list
+{
+    display: flex;
+}
+
+.games
+{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.game1
+{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.game1 img
+{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.g1_info
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.off
+{
+    background-color: #ff005d;
+    padding: 3px;
+    border-radius: 8px;
+    color: white;
+}
