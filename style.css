@@ -1,18 +1,20 @@
 body
 {
-    background-color: #585656;
     margin: 0;
-    font-size: 80%;
+    font-size: 90%;
+    background-color: #003C43;
 }
 .title
 {
-    background-color: aqua;
+    background-color: #135D66;
+    color: aqua;
     width: 25%;
 }
 .r_head
 {
     display: flex;
-    background-color: aquamarine;
+    background-color: #77B0AA;
+    color: white;
     width: 75%;
     justify-content: center;
     align-items: center;
@@ -22,9 +24,48 @@ body
     display: flex;
     text-align: center;
 }
+.navbar
+{
+    background-color: #77B0AA;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    margin: 10px 0 0 0;
+}
+.navbar ul
+{
+    list-style-type: none;
+}
+.navbar ul a
+{
+    display: inline;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.about
+{
+    display: flex;
+    color: white;
+    margin: 10px 0 0 0;
+}
+.abt_text
+{
+    background-color: #135D66;
+    width: 70%;
+    padding: 10px;
+    text-align: justify;
+}
+.social
+{
+    background-color: #77B0AA;
+    width: 30%;
+    padding: 10px;
+}
 .game_list
 {
     display: flex;
+    margin: 10px;
 }
 
 .games
@@ -35,7 +76,7 @@ body
 
 .game1
 {
-    background-color: aliceblue;
+    background-color: #E3FEF7;
     padding: 10px;
     border-radius: 8px;
 }
