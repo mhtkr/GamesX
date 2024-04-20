@@ -1,7 +1,6 @@
 body
 {
     margin: 0;
-    font-size: 90%;
     background-color: #003C43;
 }
 .title
@@ -27,7 +26,6 @@ body
 .navbar
 {
     background-color: #77B0AA;
-    height: 5vh;
     display: flex;
     justify-content: left;
     margin: 10px 0 0 0;
@@ -53,19 +51,23 @@ body
 {
     background-color: #135D66;
     width: 70%;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
 }
 .social
 {
     background-color: #77B0AA;
     width: 30%;
-    padding: 10px;
+    padding: 20px;
 }
 .game_list
 {
-    display: flex;
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 10px 0 10px 0;
+    width: 100%;
+    overflow: auto;
 }
 
 .games
@@ -79,6 +81,7 @@ body
     background-color: #E3FEF7;
     padding: 10px;
     border-radius: 8px;
+    height: 90%;
 }
 
 .game1 img
@@ -96,7 +99,7 @@ body
 .off
 {
     background-color: #ff005d;
-    padding: 3px;
+    padding: 0 5px 0 5px;
     border-radius: 8px;
     color: white;
 }
