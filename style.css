@@ -1,128 +1,87 @@
-body
-{
+body {
     margin: 0;
     background-color: #003C43;
     padding: 15px;
     font-family: "Inter", sans-serif;
 }
-.title
-{
+
+.title {
     background-color: #135D66;
     color: aqua;
-    width: 25%;
+    width: 35%;
     border-radius: 8px 0 0 8px;
 }
-.r_head
-{
+
+.r_head {
     display: flex;
     background-color: #77B0AA;
     color: white;
-    width: 75%;
+    width: 65%;
     justify-content: center;
     align-items: center;
     border-radius: 0 8px 8px 0;
 }
-.header
-{
+
+.header {
     display: flex;
     text-align: center;
-    
 }
-.navbar
-{
+
+.navbar {
     background-color: #77B0AA;
     display: flex;
     justify-content: left;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     border-radius: 8px;
 }
-.navbar ul
-{
+
+.navbar ul {
     list-style-type: none;
 }
-.navbar ul a
-{
+
+.navbar ul li {
     display: inline;
     margin-right: 10px;
+}
+
+.navbar ul li a {
     text-decoration: none;
     color: white;
 }
-.about
-{
-    display: flex;
-    color: white;
-    margin: 10px 0 0 0;
-    padding: 10px;
-}
-.abt_text
-{
-    background-color: #135D66;
-    width: 70%;
-    padding: 20px;
-    text-align: justify;
-    border-radius: 8px;
-}
-.social
-{
-    background-color: #77B0AA;
-    width: 30%;
-    padding: 20px;
-    border-radius: 8px;
-}
-.social a
-{
-    text-decoration: none;
-    margin: 10px;
-}
-.social div
-{
-    background-color: #135D66;
-    padding: 8px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.game_list
-{
+
+.game_list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px; /* Increased grid gap for proper spacing */
     margin: 10px 0 10px 0;
     width: 100%;
-    overflow: auto;
-    font-size: 90%;
 }
 
-.games
-{
+.games {
     flex: 1;
-    margin: 0 10px;
+    margin-bottom: 20px; /* Added margin-bottom for spacing between cards */
 }
 
-.game1
-{
+.game1 {
     background-color: #E3FEF7;
     padding: 10px;
     border-radius: 8px;
-    height: 90%;
+    height: 100%;
 }
 
-.game1 img
-{
+.game1 img {
     border-radius: 8px;
     width: 100%;
 }
 
-.g1_info
-{
+.g1_info {
     display: flex;
     justify-content: space-between;
 }
 
-.off
-{
+.off {
     background-color: #ff005d;
-    padding: 0 5px 0 5px;
+    padding: 0 5px;
     border-radius: 8px;
     color: white;
 }
