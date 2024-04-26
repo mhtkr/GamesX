@@ -70,7 +70,7 @@ nav
 .hd
 {
     display: grid;
-    grid-template-columns: 1fr; /* Initially, one column */
+    grid-template-columns: 1fr;
     grid-gap: 10px;
 }
 
@@ -85,7 +85,7 @@ nav
 
 @media (min-width: 600px) {
     .hd {
-        grid-template-columns: 2fr 1fr; /* Two columns for larger screens */
+        grid-template-columns: 2fr 1fr;
     }
 }
 
