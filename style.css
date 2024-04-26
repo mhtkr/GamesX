@@ -80,6 +80,7 @@ nav
     color: white;
     padding: 15px;
     margin-top: 10px;
+    border: 1px solid aqua;
     border-radius: 8px;
 }
 
@@ -89,14 +90,40 @@ nav
     }
 }
 
-.slides
+.slide
 {
     background-color: #135D66;
     color: white;
-    padding: 15px;
     margin-top: 10px;
+    border: 1px solid aqua;
     border-radius: 8px;
 }
+
+.slides img
+{
+    border-radius: 8px;
+    width:100%
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+  
+.slides {
+    display: none;
+}
+  
+.fade {
+    animation: fadeEffect 3s;
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+
 
 .game_list {
     display: grid;
