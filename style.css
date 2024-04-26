@@ -67,7 +67,29 @@ nav
     height: auto;
 }
 
+.hd
+{
+    display: grid;
+    grid-template-columns: 1fr; /* Initially, one column */
+    grid-gap: 10px;
+}
+
 .about
+{
+    background-color: #135D66;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+    .hd {
+        grid-template-columns: 2fr 1fr; /* Two columns for larger screens */
+    }
+}
+
+.slides
 {
     background-color: #135D66;
     color: white;
@@ -79,14 +101,14 @@ nav
 .game_list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 10px; /* Increased grid gap for proper spacing */
+    grid-gap: 10px;
     margin: 10px 0 10px 0;
     width: 100%;
 }
 
 .games {
     flex: 1;
-    margin-bottom: 20px; /* Added margin-bottom for spacing between cards */
+    margin-bottom: 20px;
 }
 
 .game1 {
