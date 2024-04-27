@@ -1,64 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     margin: 0;
     background-color: #003C43;
     padding: 15px 15px 0 15px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title {
+    display: flex;
     background-color: #135D66;
     color: aqua;
-    width: 35%;
     border: 1px solid aqua;
     border-radius: 8px 0 0 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .r_head {
-    display: flex;
     background-color: #77B0AA;
     color: white;
-    width: 65%;
-    justify-content: center;
-    align-items: center;
     border: 1px solid aqua;
     border-radius: 0 8px 8px 0;
 }
 
 .header {
-    display: flex;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px;
 }
 
-.navbar {
-    background-color: #77B0AA;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 0 0;
-    border: 1px solid aqua;
-    border-radius: 8px;
-    padding: 5px;
-}
-nav
-{
-    padding-left: 0px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline;
-    margin-right: 10px;
-    
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-}
 .dark_mode
 {
     background-color: #135D66;
