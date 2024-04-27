@@ -94,7 +94,7 @@ nav li:first-child
     }
 }
 
-@media(max-width: 400px)
+@media(max-width: 500px)
 {
     .sidebar
     {
