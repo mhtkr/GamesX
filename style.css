@@ -299,3 +299,63 @@ footer pre
         font-size: 0.7rem;
     }
 }
+
+/* About Page */
+
+.about_container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #135D66;
+    border-radius: 8px;
+    margin: 10px 0 200px 0;
+    padding: 5px;
+}
+
+.abt_block
+{
+    background-color: #77B0AA;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+.abt_block h3
+{
+    color: #135D66;
+}
+
+/* Contacts Page */
+
+.contacts_container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.cont
+{
+    display: grid;
+    grid-gap: 15px;
+    background-color: #77B0AA;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+}
+
+.cont a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.feedb
+{
+    background-color: #77B0AA;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    color: white;
+}
