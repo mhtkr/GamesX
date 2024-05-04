@@ -63,12 +63,26 @@ body {
 .lgn_snp a
 {
     text-decoration: none;
+    text-align: center;
     margin: 5px;
+    padding: 5px;
     color: #ff005d;
+    background-color: #003C43;
+    border-radius: 8px;
+    width: 100%;
 }
 .lgn_snp a:hover
 {
     color: white;
+}
+
+@media(max-width: 500px)
+{
+    .lgn_snp a
+    {
+        font-size: 10px;
+        width: 60%;
+    }
 }
 
 .dark_mode
@@ -157,6 +171,14 @@ body {
 {
     filter: invert(100%);
     width: 45px;
+}
+
+@media(max-width: 500px)
+{
+    .social img
+    {
+        width: 30px;
+    }
 }
 
 .social img:hover
