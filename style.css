@@ -52,6 +52,14 @@ body {
     margin-left: 10px;
 }
 
+@media (max-width: 500px) {
+    .lgn_snp {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
+
 .lgn_snp a
 {
     text-decoration: none;
@@ -126,9 +134,34 @@ body {
     animation: fadeEffect 3s;
 }
   
-@keyframes fadeEffect {
+@keyframes fadeEffect
+{
     from {opacity: 0.2}
     to {opacity: 1}
+}
+
+.social
+{
+    display: flex;
+    justify-content: left;
+}
+
+.social a
+{
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social img
+{
+    filter: invert(100%);
+    width: 45px;
+}
+
+.social img:hover
+{
+    transform: scale(1.05,1.05);
 }
 
 
@@ -157,6 +190,12 @@ body {
 .game1 img {
     border-radius: 8px;
     width: 100%;
+}
+
+.game1 img:hover
+{
+    transform: scale(1.05,1.05);
+    filter: opacity(80%);
 }
 
 .g1_info {
@@ -193,6 +232,21 @@ body {
     font-size: 12px;
 }
 
+.bottom
+{
+    background-image: url(bottom_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    min-height: 200px;
+    height: auto;
+    color: white;
+    padding: 50px;
+    text-align: justify;
+}
+
 footer
 {
     background-color: #77B0AA;
@@ -201,6 +255,7 @@ footer
     border-radius: 8px 8px 0 0;
     margin-bottom: 0;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
