@@ -2,14 +2,14 @@
 {
     margin: 0;
     padding: 0;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 body {
     margin: 0;
     background-color: #003C43;
     padding: 15px 15px 0 15px;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo {
@@ -37,8 +37,30 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 0.2fr 2fr;
+    grid-template-columns: 0.2fr 2fr 0.6fr;
     grid-template-rows: 100px;
+}
+
+.lgn_snp
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #135D66;
+    border-radius: 8px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.lgn_snp a
+{
+    text-decoration: none;
+    margin: 5px;
+    color: #ff005d;
+}
+.lgn_snp a:hover
+{
+    color: white;
 }
 
 .dark_mode
@@ -60,7 +82,8 @@ body {
 
 .about
 {
-    background-color: #135D66;
+    background-image:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.3)), url(back_head.jpg);
+    background-size: cover;
     color: white;
     padding: 15px;
     margin-top: 10px;
@@ -70,6 +93,7 @@ body {
 @media (min-width: 600px) {
     .hd {
         grid-template-columns: 2fr 1fr;
+        
     }
 }
 
@@ -89,6 +113,7 @@ body {
 
 .slideshow-container {
     max-width: 500px;
+    max-height: fit-content;
     position: relative;
     margin: auto;
 }
@@ -121,6 +146,8 @@ body {
 }
 
 .game1 {
+    display: grid;
+    grid-template-rows: auto 30px;
     background-color: #E3FEF7;
     padding: 10px;
     border-radius: 8px;
@@ -137,9 +164,30 @@ body {
     justify-content: space-between;
 }
 
+.know_more
+{   
+    background-color: #135D66;
+    color: aqua;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 8px 0 1px 0;
+}
+
+.know_more a
+{
+    text-decoration: none;
+    color: aqua;
+}
+
+.know_more a:hover
+{
+    color: white;
+}
+
 .off {
     background-color: #ff005d;
-    padding: 10px 10px;
+    padding: 7px 7px 5px 7px;
     border-radius: 8px;
     color: white;
     font-size: 12px;
