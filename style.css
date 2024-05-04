@@ -266,7 +266,6 @@ body {
     height: auto;
     color: white;
     padding: 50px;
-    text-align: justify;
 }
 
 footer
@@ -293,5 +292,10 @@ footer pre
 @media screen and (max-width: 768px) {
     footer pre {
         font-size: 0.8rem;
+    }
+
+    footer p
+    {
+        font-size: 0.7rem;
     }
 }
