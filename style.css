@@ -409,8 +409,13 @@ footer pre
         color: white;
         font-size: 3vw;
         border-radius: 8px;
-        margin-top: 10px; /* Adjust as needed */
+        margin-top: 10px;
         padding: 20px;
+    }
+
+    .abt_game p
+    {
+        font-size: 3vw;
     }
 }
 
@@ -451,8 +456,8 @@ footer pre
     left: 0;
     width: 80%;
     height: 100%;
-    z-index: 0; /* Ensure gradient is behind the text */
-    border-radius: 8px; /* Ensuring the gradient takes the border radius */
+    z-index: 0;
+    border-radius: 8px;
 }
 
 .highlight
