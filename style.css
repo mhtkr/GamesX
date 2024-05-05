@@ -332,16 +332,17 @@ footer pre
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .cont
 {
-    display: grid;
-    grid-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #77B0AA;
     border-radius: 8px;
-    margin: 10px 0 10px 0;
+    margin: 0 0 5px 0;
     padding: 20px;
 }
 
@@ -351,11 +352,94 @@ footer pre
     color: white;
 }
 
+.cont img
+{
+    filter: invert(100%);
+    width: 50px;
+    margin: 5px;
+}
+
 .feedb
 {
     background-color: #77B0AA;
     border-radius: 8px;
     padding: 20px;
-    margin: 10px 0 10px 0;
+    margin: 0 0 5px 0;
     color: white;
+}
+
+/* To know more */
+
+.game_all
+{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    grid-gap: 10px;
+}
+
+.buy
+{
+    background-color: #135D66;
+    color: white;
+    font-size: 1.3vw;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.banner
+{
+    margin: 10px 0 10px 0;
+    position: relative;
+    border-radius: 8px;
+}
+
+.banner img
+{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.ban_info
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner::before {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 0; /* Ensure gradient is behind the text */
+    border-radius: 8px; /* Ensuring the gradient takes the border radius */
+}
+
+.highlight
+{
+    color: #ff005d;
+}
+
+.banner h1
+{
+    margin: 0;
+    font-size: 3vw;
+}
+
+.banner p
+{
+    margin: 0;
+    font-size: 2vw;
 }
